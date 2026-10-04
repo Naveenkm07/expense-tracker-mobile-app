@@ -8,7 +8,13 @@
     "scheme": "expensetracker",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "splash": {
+        "backgroundColor": "#208AEF",
+        "image": "./assets/images/splash-icon.png",
+        "resizeMode": "contain",
+        "imageWidth": 200
+      }
     },
     "android": {
       "package": "com.epenesetarcker.app",
@@ -19,7 +25,17 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "splash": {
+        "backgroundColor": "#208AEF",
+        "image": "./assets/images/splash-icon.png",
+        "resizeMode": "contain",
+        "imageWidth": 200,
+        "dark": {
+          "backgroundColor": "#1a1a2e",
+          "image": "./assets/images/splash-icon-dark.png"
+        }
+      }
     },
     "web": {
       "output": "single",
@@ -32,7 +48,12 @@
         {
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "resizeMode": "contain",
+          "imageWidth": 200,
+          "dark": {
+            "backgroundColor": "#1a1a2e",
+            "image": "./assets/images/splash-icon-dark.png"
+          }
         }
       ],
       "expo-secure-store"
@@ -40,6 +61,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b16b4ab2-e1e1-4a9d-bb90-d562bfde3308"
+      }
+    },
+    "owner": "naveenkm07"
   }
 }
